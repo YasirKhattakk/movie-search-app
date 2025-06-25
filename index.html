@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="author" content="Yasir" />
+    <meta
+      name="description"
+      content="A movie site repository for latest and old movies details"
+    />
+    <title>Movie Site</title>
+    <link rel="stylesheet" href="main.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="top-nav">
+        <a class="active" href="#">Movie Site</a>
+        <div class="search-container">
+          <form role="search" id="form">
+            <input type="search" id="searchbox" placeholder="Movie title..." />
+          </form>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="advanced-search">
+  <label for="searchbox"><strong>Search Term:</strong></label>
+  <input type="search" id="searchbox" placeholder="Type movie title..." />
+  
+  <div class="filter-row">
+    <div class="filter-group">
+      <label for="qualityFilter">Quality:</label>
+      <select id="qualityFilter">
+        <option value="">All</option>
+        <option value="1080p">1080p</option>
+        <option value="720p">720p</option>
+        <option value="480p">480p</option>
+      </select>
+    </div>
+
+    <div class="filter-group">
+      <label for="genreFilter">Genre:</label>
+      <select id="genreFilter" size="1">
+        <option value="28">Action</option>
+        <option value="35">Comedy</option>
+        <option value="27">Horror</option>
+        <option value="18">Drama</option>
+        <option value="10749">Romance</option>
+        <option value="16">Animation</option>
+        <option value="99">Documentary</option>
+      </select>
+    </div>
+
+    <div class="filter-group">
+      <label for="ratingFilter">Rating:</label>
+      <select id="ratingFilter">
+        <option value="">All</option>
+        <option value="7">7+</option>
+        <option value="8">8+</option>
+        <option value="9">9+</option>
+      </select>
+    </div>
+
+    <div class="filter-group">
+      <label for="yearFilter">Year:</label>
+      <input type="number" id="yearFilter" placeholder="e.g. 2023" />
+    </div>
+
+    <div class="filter-group">
+      <label for="languageFilter">Language:</label>
+      <select id="languageFilter">
+        <option value="">All</option>
+        <option value="en">English</option>
+        <option value="hi">Hindi</option>
+        <option value="ja">Japanese</option>
+        <option value="fr">French</option>
+        <option value="es">Spanish</option>
+      </select>
+    </div>
+
+    <div class="filter-group">
+      <label for="orderFilter">Order By:</label>
+      <select id="orderFilter">
+        <option value="popularity.desc">Latest</option>
+        <option value="release_date.desc">Newest Release</option>
+        <option value="vote_average.desc">Top Rated</option>
+      </select>
+    </div>
+  </div>
+
+  <button id="searchButton">Search</button>
+</div>
+
+      <section id="mainSection">
+        <!--             <div class="row">
+                <div class="column">
+                    <div class="card">
+                        <center><img class="thumbnail" src="img/movie.jfif" alt="movie thumbnail"></center>
+                        <h3>Movie Title</h3>
+                    </div>
+                </div>
+            </div> -->
+      </section>
+      <!---->
+      <div id="movieModal" class="modal">
+        <div class="modal-content">
+          <span class="close-button" id="closeModal">&times;</span>
+          <div class="modal-body">
+            <div class="modal-left">
+              <img
+                id="modalImage"
+                class="modal-image"
+                src=""
+                alt="Movie Poster"
+              />
+            </div>
+            <div class="modal-right">
+              <h2 id="modalTitle"></h2>
+              <p id="modalOverview"></p>
+              <p id="modalRating"></p>
+              <p id="modalReleaseDate"></p>
+              <div id="modalTrailerContainer">
+                <h3>Trailer</h3>
+                <iframe
+                  id="modalTrailer"
+                  width="100%"
+                  height="200"
+                  src=""
+                  title="Movie Trailer"
+                  frameborder="0"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!---->
+    </main>
+    <!-- <br>
+    <hr /> <br> -->
+    <footer>
+      <p>Copyrights &copy; Entertainment Studio 2025</p>
+    </footer>
+  </body>
+</html>
