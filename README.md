@@ -26,11 +26,8 @@ A dynamic, responsive movie search and discovery application powered by The Movi
 ## 📷 Screenshots
 
 Screenshots\Search_bar.PNG
-![search_bar](image.png)
 Screenshots\movie_detail.PNG
-![movie_detail](image-1.png)
 Screenshots\screen_responsivesness.PNG
-![creen_responsivesness](image-2.png)
 ---
 
 ## 🧰 Tech Stack
@@ -46,7 +43,7 @@ Screenshots\screen_responsivesness.PNG
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/YasirKhattakk/movie-search-app
+   git clone https://github.com/YasirKhattakk/movie-search-app.git
    cd movie-search-app
 2. Open index.html in your browser.
 
